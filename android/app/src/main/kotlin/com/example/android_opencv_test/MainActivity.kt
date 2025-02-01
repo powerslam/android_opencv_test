@@ -34,6 +34,10 @@ class MainActivity: FlutterActivity() {
                     result.success(subtraction(a, b))
                 }
 
+                "grayimage" -> {
+                    result.success(grayimage())
+                }
+
                 else -> result.notImplemented()
             }
         }
@@ -42,4 +46,6 @@ class MainActivity: FlutterActivity() {
     external fun addition(a: Int, b: Int): Int
 
     external fun subtraction(a: Int, b: Int): Int
+
+    external fun grayimage(): ByteArray
 }
